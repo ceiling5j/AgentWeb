@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #e8ecf8;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.chat-card {
+  width: min(760px, 100%);
+  background: #121a33;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.hint {
+  margin-top: -8px;
+  color: #9da9c7;
+}
+
+.messages {
+  min-height: 280px;
+  max-height: 420px;
+  overflow-y: auto;
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  margin: 20px 0;
+  background: #0a1328;
+  border-radius: 10px;
+}
+
+.message {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.message.user {
+  background: #1f3270;
+}
+
+.message.assistant {
+  background: #203f2d;
+}
+
+.composer textarea {
+  width: 100%;
+  resize: vertical;
+  border-radius: 10px;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.composer button {
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4f7cff;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff7a88;
+}
+
+.empty {
+  color: #8a96b7;
+}
